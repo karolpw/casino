@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(104, 101, 255);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(52, 52, 255);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 2s;
+    margin-top: 15px;
+}
+
+button:hover {
+    width: 150px;
+    height: 45px;
+    background-color: rgb(0, 238, 255);
+}
+
+div {
+    text-align: center;
+}
+
+#wyg {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.losy-con {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.losy {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.losy-con {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 238, 255);
+    border-radius: 20px;
+    transition: 2s;
+    animation: losy-con 2s infinite;
+}
+
+@keyframes losy-con {
+    0% {
+        background-color: rgb(255, 0, 0);
+    }
+    25% {
+        background-color: rgb(94, 255, 0);
+    }
+    50% {
+        background-color: rgb(0, 238, 255);
+    }
+    75% {
+        background-color: rgb(94, 255, 0);
+    }
+
+    100% {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+
+.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(95, 94, 190);
+    z-index: -1;
+    animation: box-anim 2s infinite;
+}
+
+@keyframes box-anim{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 50%;
+    }
+    50%{
+        top: 50%;
+        left: 50%;
+    }
+    75%{
+        top: 50%;
+        left: 0;
+    }
+}
+
+.box2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(95, 94, 190);
+    z-index: -1;
+    animation: box2-anim 2s infinite;
+}
+
+@keyframes box2-anim{
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+    25%{
+        top: 50%;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        left: 0;
+    }
+    75%{
+        top: 0;
+        left: 50%;
+    }
+}
+
+
+.box3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(95, 94, 190);
+    z-index: 10;
+    transition: opacity 2s ease;
+    opacity: 1;
+}
